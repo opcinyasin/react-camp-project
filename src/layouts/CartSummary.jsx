@@ -1,20 +1,21 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Dropdown} from "semantic-ui-react";
+import {NavLink} from "react-router-dom";
 
-class CartSummary extends Component {
-    render() {
-        return (
-            <div>
-                <Dropdown item text='Language'>
-                    <Dropdown.Menu>
-                        <Dropdown.Item>English</Dropdown.Item>
-                        <Dropdown.Item>Russian</Dropdown.Item>
-                        <Dropdown.Item>Spanish</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-            </div>
-        );
-    }
+function CartSummary() {
+    return (
+        <div>
+            <Dropdown item text='Sepetiniz'>
+                <Dropdown.Menu>
+                    <Dropdown.Item>English</Dropdown.Item>
+                    <Dropdown.Item>Russian</Dropdown.Item>
+                    <Dropdown.Item>Spanish</Dropdown.Item>
+                    <Dropdown.Divider/>
+                    <Dropdown.Item as={NavLink} to="/cart">Sepete Git</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
+        </div>
+    );
 }
 
 export default CartSummary;
