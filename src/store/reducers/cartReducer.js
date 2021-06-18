@@ -26,6 +26,6 @@ export default function cartReducer(state = initialState, {type, payload}) {
                 cartItems: state.cartItems.filter(c => c.product.id !== payload.id)
             }
         default:
-            return this.state
+            return state
     }
 }

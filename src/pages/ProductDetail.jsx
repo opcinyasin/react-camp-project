@@ -5,7 +5,7 @@ import ProductService from "../services/productService";
 
 function ProductDetail() {
 
-    let {name} = useParams();
+    const {name} = useParams();
 
     const [product, setProduct] = useState({});
 
