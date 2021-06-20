@@ -40,7 +40,6 @@ function ProductList() {
 
                 <Table.Body>
                     {
-
                         products.map((product, index) => (
                             <Table.Row key={product.id}>
                                 <Table.Cell>{index + 1}</Table.Cell>

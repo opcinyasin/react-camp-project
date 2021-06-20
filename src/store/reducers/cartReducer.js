@@ -1,4 +1,4 @@
-import {cartItems} from "../initialValues/cartIems";
+import {cartItems} from "../initialValues/cartItems";
 import {ADD_TO_CART, REMOVE_FROM_CART} from "../actions/cartActions";
 
 const initialState = {
