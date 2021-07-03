@@ -10,9 +10,10 @@ function ProductDetail() {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
+
         let productService = new ProductService()
         productService.getByProductName(name).then(result => setProduct(result.data.data));
-    }, [])
+    },[name])
 
 
     return (
